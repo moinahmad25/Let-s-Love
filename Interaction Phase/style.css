@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+    background: linear-gradient(to left,rgb(255, 201, 208),white);
+}
+span{
+    font-family: 'Bostana';
+    letter-spacing: 1.5px;
+    font-size: 65px;
+    color: rgb(255, 43, 43);
+}
+header{
+    background: linear-gradient(to left,rgb(255, 201, 208),white);
+    padding: 0 20px;
+    height: 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+.heading{
+    font-family: 'Bostana';
+    font-size: 70px;
+    font-weight: 700;
+    color: rgb(255, 0, 0);
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    margin-left: 20px;
+}
+
+.nav{
+    margin: 0 10px;
+}
+.nav-list{
+    display: flex;
+}
+.nav-links, .submissions{
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-size: 16px;
+    background: rgb(255, 43, 43);
+    padding: 12px 30px;
+    border-radius: 25px;
+    transition: .3s;
+}
+.submissions{
+    cursor: pointer;
+    border: none;
+}
+.profile-section{
+    display: flex;
+    height: inherit;
+    align-items: center;
+    margin-right: 20px;
+}
+.notification{
+    height: 100px;
+}
+.profile{
+    height: 45px;
+    border-radius: 50%;
+}
+.nav-links:hover, .submissions:hover, .load-more:hover{
+    background: rgb(188, 36, 36);
+    box-shadow: 2px 2px 4px black;
+}
+.main{
+    height: 100vh;
+    width: 100vw;
+}
+.container{
+    height: 90vh;
+    position: relative;
+}
+.bg{
+    height: 70vh;
+    height: 100%;
+    width: 100%;
+    /* background: url('Assets/11833413_4836906.jpg'); */
+    object-fit: cover;
+    filter: blur(4px);
+    /* z-index: -1; */
+}
+.heading1{
+    font-size: 90px;
+    color: rgb(255, 40, 76);
+}
+.line{
+    top: 0;
+    width: 15rem;
+    height: 4px;
+    background: rgb(255, 40, 76);
+    margin: auto;
+}
+.profile-info{
+    /* z-index: 9999; */
+    margin-top: 20px;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%,-50%);
+}
+.information{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 100vw;
+}
+.left{
+    height: 450px;
+    width: 350px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.name{
+    font-size: 45px;
+}
+.age-place{
+    display: flex;
+}
+.age, .place{
+    font-size: 16px;
+    font-weight: 500;
+    /* margin:0px 10px 20px 10px; */
+}
+.place{
+    margin-left: 10px;
+}
+.about-skills{
+    text-align: center;
+    color: white;
+    background: rgb(255, 40, 76);
+    display: inline-block;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 20px;
+}
+.skills{
+    width: 300px;
+}
+.bold{
+    font-size: 19px;
+    font-weight: 700;
+    text-decoration: underline;
+}
+.reason{
+    height: 200px;
+    width: 400px;
+    border-radius: 20px;
+    border: 2px solid rgb(255, 40, 76);
+    background: rgb(255, 40, 76);
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.t1{
+    margin-top:20px;
+    /* margin-left: 20px; */
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 18px;    
+}
+.answer{
+    font-size: 16px ;
+    margin-top: 20px;
+    /* margin-left: 20px; */
+    color: rgb(255, 194, 206);
+    font-weight: 500;
+    width: 350px;
+    /* text-align: center; */
+
+}
+.base{
+    height: 200px;
+    width: 220px;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.circle{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 98;
+    box-shadow: 3px 3px 10px black;
+    border: none;
+    cursor: pointer;
+}
+.reject, .select{
+    height: 60px;
+    width: 60px;
+    /* object-fit: cover; */
+}
+.t2{
+    margin-top: 10px;
+    text-align: center;
+}

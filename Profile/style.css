@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', 'Poppins';
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+body{
+
+    background: linear-gradient(to left,rgb(255, 201, 208),white);
+}
+span{
+    font-family: 'Bostana';
+    letter-spacing: 1.5px;
+    font-size: 65px;
+    color: rgb(255, 43, 43);
+}
+header{
+    background: linear-gradient(to left,rgb(255, 201, 208),white);
+    padding: 0 20px;
+    height: 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+.heading{
+    font-family: 'Bostana';
+    font-size: 70px;
+    font-weight: 700;
+    color: rgb(255, 0, 0);
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    margin-left: 20px;
+}
+
+.nav{
+    margin: 0 10px;
+}
+.nav-list{
+    display: flex;
+}
+.nav-links, .submissions{
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-size: 16px;
+    background: rgb(255, 43, 43);
+    padding: 12px 30px;
+    border-radius: 25px;
+    transition: .3s;
+}
+.submissions{
+    cursor: pointer;
+    border: none;
+}
+.profile-section{
+    display: flex;
+    height: inherit;
+    align-items: center;
+    margin-right: 20px;
+}
+.notification{
+    height: 100px;
+}
+.profile{
+    height: 45px;
+    border-radius: 50%;
+}
+.nav-links:hover, .submissions:hover, .load-more:hover{
+    background: rgb(188, 36, 36);
+    box-shadow: 2px 2px 4px black;
+}
+.title{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 50px;
+}
+.desc{
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+}
+.container{
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card{
+    height: 420px;
+    width: 360px;
+    margin: 50px 20px;
+    position: relative;
+    cursor: pointer;
+}
+.care{
+    border-radius: 20px;
+    height: 420px;
+    width: 360px;
+    overflow: hidden;
+}
+.about{
+    width: 360px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 60;
+    color: rgb(255, 255, 255);
+    transform: translateY(-110px);
+    opacity: 0;
+    pointer-events: none;
+    transition: .4s;
+}
+.card:hover .about{
+    opacity: 1;
+    transform: translateY(-200px);
+    z-index: 9999;
+}
+/* .card:hover .personal{
+    transition-delay: 3s;
+} */
+.name{
+    font-size: 30px;
+
+}
+.personal{
+    display: flex;
+    font-size: 14px;
+    justify-content: center;
+    transition-delay: 1s;
+}
+.years{
+    margin-right: 10px;
+}
+.card:hover .profile-img{
+    transform: scale(1.25);
+}
+.card:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 420px;
+    width: 360px;
+    border-radius: 20px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.7));
+    opacity: 0;
+    transition: .5s;
+}
+.card:hover:before{
+    opacity: 1;
+    z-index: 1;
+}
+.profile-img{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    z-index: -1;
+    transition: .5s;
+}
+.circle{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 98;
+    box-shadow: 3px 3px 10px black;
+    border: none;
+    cursor: pointer;
+}
+.contain{
+    gap: 30px;
+    display: flex;
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    z-index: 98;
+    transform: translateX(-50%);
+} 
+.load-more{
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-size: 16px;
+    background: rgb(255, 43, 43);
+    padding: 12px 30px;
+    border-radius: 25px;
+    transition: .3s;
+    border: none;
+    cursor: pointer;
+}
+.loading{
+    text-align: center;
+    margin: 20px;
+}
+.footer{
+    z-index: -1;
+    height: 20rem;
+    background: linear-gradient(to right, rgb(255, 197, 205), white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.detail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    text-align: center;
+}
+.social-handles{
+    text-align: center;
+    font-size: 50px;
+}
+.contact{
+    margin: 20px 0;
+}
+.fsize{
+    font-size: 20px;
+    margin-bottom: 4px;
+}
+
+.fi{
+    font-size: 30px;
+    margin:30px 10px;
+    transition: .3s;
+}
+.fi-brands-facebook:hover{
+    border-radius: 50%;
+    color: dodgerblue;
+}
+.fi-brands-instagram:hover{
+    border-radius: 50%;
+    color: rgb(255, 30, 105);
+}
+.fi-brands-linkedin:hover{
+    border-radius: 50%;
+    color: rgb(69, 126, 177);
+}

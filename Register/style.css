@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+body{
+
+    background: linear-gradient(to left,rgb(255, 201, 208),white);
+}
+span{
+    font-family: 'Bostana';
+    letter-spacing: 1.5px;
+    font-size: 65px;
+    color: rgb(255, 43, 43);
+}
+header{
+    background: linear-gradient(to left,rgb(255, 201, 208),white);
+    padding: 0 20px;
+    height: 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+.heading{
+    font-family: 'Bostana';
+    font-size: 70px;
+    font-weight: 700;
+    color: rgb(255, 0, 0);
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    margin-left: 20px;
+}
+
+.nav{
+    margin: 0 10px;
+}
+.nav-list{
+    display: flex;
+}
+.nav-links, .submissions{
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-size: 16px;
+    background: rgb(255, 43, 43);
+    padding: 12px 30px;
+    border-radius: 25px;
+    transition: .3s;
+}
+.submissions{
+    cursor: pointer;
+    border: none;
+    /* margin: 0 10px; */
+}
+.profile-section{
+    display: flex;
+    height: inherit;
+    align-items: center;
+}
+.nav-links:hover, .submissions:hover{
+    background: rgb(188, 36, 36);
+    box-shadow: 2px 2px 4px black;
+}
+.container{
+    width: 60%;
+    height: 36rem;
+    background: rgb(255, 240, 240);
+    margin: 4rem auto;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    border: 2px solid rgb(237, 237, 237);
+    box-shadow: 4px 5px 5px rgb(179, 179, 179);
+    
+}
+.container:hover{
+    animation-name: shadow;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes shadow{
+    to{
+        box-shadow: 4px 4px 10px rgb(255, 127, 127);
+    }
+}
+.registration{
+    margin-top: 3rem;
+    margin-left: 3rem;
+}
+.reg{
+    width: 60%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+#p1{
+    color: rgb(133, 133, 133);
+    font-size: 14px;
+    /* font-weight: 600; */
+}
+#sign-up{
+    font-size: 30px;
+    color: rgb(64, 64, 64);
+    margin: 0.8rem 0;
+}
+#log{
+    margin-left: 0.4rem;
+    color: rgb(255, 60, 60);
+    font-weight: bold;
+    transition: .3s;
+}
+#log:hover{
+    color: rgb(189, 25, 25);
+    text-decoration: underline;
+}
+.email-pass{
+    margin: 3rem 0 2rem 0;
+}
+#p2{
+    font-size: 15px;
+    color: rgb(49, 49, 49);
+    
+}
+#email{
+    width: 18rem;
+    height: 3rem;
+    border: 1.5px solid rgb(214, 214, 214);
+    border-radius: 5px;
+    padding: 0 0 0 10px;
+    margin-top: 10px;
+}
+.item1{
+    margin-bottom: 1.5rem;
+}
+.bton{
+    width: 18rem;
+    height: 3rem;
+    border: none;
+    border-radius: 5px;
+    background: rgb(255, 60, 60);
+    margin-top: 1rem;
+    color: white;
+    cursor: pointer;
+}
+.bton:hover{
+    animation-name: btondark;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes btondark{
+    to{
+        background: rgb(183, 20, 20);
+    }
+}
+.bton1{
+    width: 18rem;
+    height: 3rem;
+    border: 1px solid rgb(208, 207, 207);
+    border-radius: 5px;
+    background: rgb(255, 255, 255);
+    margin-top: 1rem;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+.bton1:hover{
+    animation-name: bton1dark;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes bton1dark{
+    to{
+        background: black;
+        color: white;
+    }
+}
+#sign{
+    color: white;
+}
